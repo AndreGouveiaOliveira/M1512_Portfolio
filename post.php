@@ -67,19 +67,30 @@
                         <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
                     </div>
 
+                    <!-- Test du drop d'image-->
+                    <div class="js-upload uk-placeholder uk-text-center">
+                        <span uk-icon="icon: cloud-upload"></span>
+                        <span class="uk-text-middle">Attach binaries by dropping them here or</span>
+                        <div uk-form-custom>
+                            <input type="file" multiple accept="image/*">
+                            <span class="uk-link">selecting one</span>
+                        </div>
+                    </div>
+
+
                     <div class="uk-margin">
                         <p class="uk-margin">
                             <button class="uk-button uk-button-default">Publier</button>
                         </p>
                     </div>
 
-                    <div class="uk-margin uk-position-bottom-right uk-margin-medium-right">
+                    <!--<div class="uk-margin uk-position-bottom-right uk-margin-medium-right">
                         <div uk-form-custom>
                             <input type="file">
                             <span class="uk-text-middle">Image</span>
                             <span class="uk-link uk-icon" uk-icon="icon: plus-circle"></span>
                         </div>
-                    </div>
+                    </div>-->
                 </form>
             </div>
         </div>
