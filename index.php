@@ -28,7 +28,7 @@
 
 <body style="background-color: lightgrey">
     <div class="uk-flex uk-margin-small-left">
-        <div class="uk-margin-medium-left">
+        <div class="uk-margin-medium-left uk-width-1-5">
             <div class="uk-card uk-card-default uk-margin-medium-top">
                 <div class="uk-card-media-top">
                     <img src="images/icon.jpg" height="520" width="580" alt="">
@@ -46,7 +46,7 @@
             </div>
         </div>
 
-        <div class="uk-margin-medium-left uk-margin-medium-right uk-width-3-4">
+        <div class="uk-margin-medium-left uk-margin-medium-right uk-width-4-5">
 
             <div class="uk-card uk-card-default uk-card-body uk-margin-medium-top">
                 <div class="uk-card-header">

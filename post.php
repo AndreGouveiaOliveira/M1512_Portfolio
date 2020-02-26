@@ -1,3 +1,7 @@
+<?php
+require_once "lib.utility.inc.php";
+?>
+
 <nav class="uk-navbar-container uk-margin" uk-navbar>
     <div class="uk-navbar-left">
 
@@ -29,7 +33,7 @@
 
 <body style="background-color: lightgrey">
     <div class="uk-flex uk-margin-small-left">
-        <div class="uk-margin-medium-left">
+        <div class="uk-margin-medium-left uk-width-1-5">
             <div class="uk-card uk-card-default uk-margin-medium-top">
                 <div class="uk-card-media-top">
                     <img src="images/icon.jpg" height="520" width="580" alt="">
@@ -39,6 +43,7 @@
                     <p>Description</p>
                 </div>
             </div>
+
             <div class="uk-card uk-card-default uk-card-body uk-margin-medium-top">
                 <h3 class="uk-card-title">A propos</h3>
                 <button class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom">Modal / Dialog</button>
@@ -47,10 +52,10 @@
             </div>
         </div>
 
-        <div class="uk-margin-medium-left uk-margin-medium-right uk-width-3-4">
+        <div class="uk-margin-medium-left uk-margin-medium-right uk-width-4-5">
 
             <div class="uk-card uk-card-default uk-card-body uk-margin-medium-top">
-                <form>
+                <form method="POST" action="upload.php" enctype="multipart/form-data">
 
                     <legend class="uk-legend">
                         Nouveau post
@@ -68,32 +73,33 @@
                     </div>
 
                     <!-- Test du drop d'image-->
-                    <div class="js-upload uk-placeholder uk-text-center">
+                    <!--<div class="js-upload uk-placeholder uk-text-center">
                         <span uk-icon="icon: cloud-upload"></span>
                         <span class="uk-text-middle">Attach binaries by dropping them here or</span>
                         <div uk-form-custom>
                             <input type="file" multiple accept="image/*">
                             <span class="uk-link">selecting one</span>
                         </div>
-                    </div>
+                    </div>-->
 
 
-                    <div class="uk-margin">
-                        <p class="uk-margin">
-                            <button class="uk-button uk-button-default">Publier</button>
+                    <div class="">
+                        <p class="uk-margin uk-align-right">
+                            <button class="uk-button uk-button-default ">Publier</button>
                         </p>
                     </div>
 
-                    <!--<div class="uk-margin uk-position-bottom-right uk-margin-medium-right">
-                        <div uk-form-custom>
-                            <input type="file">
-                            <span class="uk-text-middle">Image</span>
-                            <span class="uk-link uk-icon" uk-icon="icon: plus-circle"></span>
-                        </div>
-                    </div>-->
+                    <div></div>
+                    <div class="uk-form-custom uk-margin-small-top uk-align-right">
+                        <input type="file" multiple accept='image/*' name="img">
+                        <input type="hidden" name="MAX_FILE_SIZE" value="70000000">
+                        <span class="uk-text-middle">Image</span>
+                        <span class="uk-link uk-icon" uk-icon="icon: plus-circle"></span>
+                    </div>
                 </form>
             </div>
         </div>
+    </div>
     </div>
 </body>
 
