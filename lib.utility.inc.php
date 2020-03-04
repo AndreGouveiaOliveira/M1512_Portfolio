@@ -9,3 +9,11 @@ function getMedia()
 
     return $req->fetchAll(PDO::FETCH_ASSOC);
 }
+
+
+function insertMedia(){
+    $sql = "INSERT INTO table_name (typeMedia, nomMedia, creationDate, modificatonDate, Post_idPost)
+    VALUES (value1, value2, value3, ...)";
+
+
+}
