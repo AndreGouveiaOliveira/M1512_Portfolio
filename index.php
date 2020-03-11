@@ -54,9 +54,6 @@
                         <div class="uk-width-auto">
                             <img class="uk-border-circle" width="40" height="40" src="images/icon.jpg">
                         </div>
-                        <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Welcome</h3>
-                        </div>
                     </div>
                 </div>
                 <div class="uk-card-body">

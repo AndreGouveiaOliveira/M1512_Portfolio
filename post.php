@@ -65,11 +65,7 @@ require_once "lib.utility.inc.php";
                     </div>
 
                     <div class="uk-margin">
-                        <input class="uk-input" type="text" placeholder="Input">
-                    </div>
-
-                    <div class="uk-margin">
-                        <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                        <textarea class="uk-textarea" name="commentaire" rows="5" placeholder="Textarea"></textarea>
                     </div>
 
                     <!-- Test du drop d'image-->
@@ -89,9 +85,9 @@ require_once "lib.utility.inc.php";
                         </p>
                     </div>
 
-                    <div></div>
+                    
                     <div class="uk-form-custom uk-margin-small-top uk-align-right">
-                        <input type="file" multiple accept='image/*' name="img">
+                        <input type="file" multiple accept='image/*' name="img[]">
                         <input type="hidden" name="MAX_FILE_SIZE" value="70000000">
                         <span class="uk-text-middle">Image</span>
                         <span class="uk-link uk-icon" uk-icon="icon: plus-circle"></span>
