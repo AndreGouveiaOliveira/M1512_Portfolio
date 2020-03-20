@@ -1,3 +1,6 @@
+<?php
+require_once "lib.utility.inc.php";
+?>
 <nav class="uk-navbar-container uk-margin" uk-navbar>
     <div class="uk-navbar-left">
 
@@ -38,12 +41,6 @@
                     <p>Description</p>
                 </div>
             </div>
-            <div class="uk-card uk-card-default uk-card-body uk-margin-medium-top">
-                <h3 class="uk-card-title">A propos</h3>
-                <button class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom">Modal / Dialog</button>
-                <button class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom">Datetime Exemple</button>
-                <button class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom">Data Grids</button>
-            </div>
         </div>
 
         <div class="uk-margin-medium-left uk-margin-medium-right uk-width-4-5">
@@ -69,14 +66,19 @@
                             <img class="uk-border-circle" width="40" height="40" src="images/icon.jpg">
                         </div>
                         <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Salut Poto</h3>
+                            <p class="uk-card-title uk-margin-remove-bottom">Comment va</p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-card-body">
-                    <p>Comment va</p>
+                    <!-- Mettre les images -->
                 </div>
             </div>
+
+            <?php
+            showPost();
+            ?>
+            
         </div>
     </div>
 </body>
